@@ -1,0 +1,17 @@
+.union
+{
+	font-size: 16px;
+	font-weight: 700;
+}
+.inputdiv
+{
+	float: left;
+	padding: .7em .1em;
+}
+.heart {
+    position: relative;
+    width: 20px;
+    float: left;
+    height: 18px;
+    background: url('../img/gray.png');
+}

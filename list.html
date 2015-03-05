@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <style type="text/css">
+    tr:nth-child(even) {
+      background: #CCC;
+      text-align: center;
+    }
+    tr:nth-child(odd) {
+      background-color: #FAFAFA; 
+      text-align: center;     
+    }
+    .mytr{
+
+    }
+    .head{
+      font-family: cursive;
+    }
+    .paragraph{
+      font-family: cursive;
+      font-size:18px;
+    }
+    table {
+      border: 1px solid #666;
+      border-collapse: collapse; 
+      font-size:22px;
+      font-family: monospace; 
+    }
+    tr, td {
+      border: 1px solid #666;
+    }
+    td:hover {
+      background-color: yellow;
+    }
+  </style>
+	<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="js/storage.js"></script>
+  <script type="text/javascript">
+  	$(document).ready(function(){
+  		data = new storage()
+  		data.opendata()
+  		data.query("select * from loglog",function(result){
+  			for (var i = 0; i <= result.length - 1; i++) {
+            str  = "<tr class='mytr'>"
+            str=str+"<td>"+result[i].logid+"</td>"
+            str=str+"<td>"+result[i].color+"</td>"
+            str=str+"<td>"+result[i].water+"</td>"
+            str=str+"<td>"+result[i].type+"</td>"
+            str=str+"<td>"+result[i].feeling+"</td>"
+            str=str+"<td>"+result[i].notes+"</td>"
+            str=str+"<td>"+result[i].date+"</td>"
+  			    str+="</tr>"
+           $("#mytable").append(str)
+        };
+  		})
+  	})
+  </script>
+</head>
+
+<body>
+
+  <h1 class="head" align="center">This is Record List.</h1>
+
+  <p class="paragraph" align="center">This is the detial information of your bewol movement record.</p>
+
+  <table id="mytable" align="center">
+    <tr>
+      <th>Id</th>
+      <th>Color</th>
+      <th>Water</th>
+      <th>Type</th>
+      <th>Feeling</th>
+      <th>Notes</th>
+      <th>Date</th>
+    </tr>
+  </table>
+         
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>LogLog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <script src="js/respond.js"></script>
+</head>
+
+<body>
+<div class="container">
+	<!-- row 1: navigation -->
+    <div class="row">
+    	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  MENU
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="collapse">
+                <ul class="nav navbar-nav">
+                    <li  class="active"><a href="#">Home</a></li>
+                    <li class="dropdown"><a href="#" data-toggle="dropdown">About us<span class="caret"></span></a>
+                    	<ul class="dropdown-menu">
+                        	<li><a href="#">Junchen Quan</a></li>
+                            <li><a href="#">Mingzi Yi</a></li>
+                            <li><a href="#">Yifan Guo</a></li>
+                            <li><a href="#">Ian Baker</a></li>
+                        </ul>                    
+                    </li>
+                    <!--Services-->
+                    <li><a href="scan.html">Record</a></li>
+                    <!--Photo Gallery-->
+                    <li><a href="tips.html">Health Tips</a></li>
+                    <!--Contact-->
+                    <li><a href="calendar.html">Log Calendar</a></li>  
+                </ul> 
+            </div>
+         </nav> 
+    </div>
+   
+    <!-- row 2: header -->
+    <header class="row">
+    	<div class="col-lg-6 col-sm-5">
+        	<a href="index.html"><img src="img/logo2.png" alt="Wisdom Pets. click for home." class="img-responsive" style="margin-top: 50px;"></a>
+        </div>
+    	<div class="col-lg-6 col-sm-7">
+            <!--animals-->
+        	<img src="img/log1.jpg" alt="" class="hidden-xs img-responsive" style="margin-top: 50px;">
+        </div>
+    </header>
+    
+    <!-- row 3: article/aside -->
+    <div class="row">
+    	<article class="col-lg-offset-1 col-sm-offset-1 col-lg-8 col-sm-7 col-lg-push-3 col-sm-push-4">
+        
+            <ol class="breadcrumb">
+              <li class="active"><a href="#">Home</a> <span class="glyphicon glyphicon-circle-arrow-right"></span></li>
+              <!--
+              <li><a href="#">Services</a> <span class="glyphicon glyphicon-circle-arrow-right"></span></li>
+              <li class="active">Vaccinations</li>
+            -->
+            </ol>
+        
+            <h1>Frank</h1>
+            <!--cockatiel-->
+            <p><img src="img/user.jpg" class="pull-right img-responsive img-circle"></p>
+            <p><img src="img/data chart.jpg" class="pull-left"></p>
+                        <!-- nested row 3a: callouts -->
+         <div class="clearfix visible-xs visible-lg"></div>
+            <div class="row">
+                <div class="col-lg-3 col-xs-6">
+                	<div class="thumbnail">
+                        <div class="caption">
+                            <h4><span class="glyphicon glyphicon-pushpin"></span> Home</h4>
+                            <p>This page shows your your bowel condition and feelings. Easily to see your heath trend from the line chart. All functions are listed here, do not hesitate to try them!</p>
+                            <p><a href="#" class="btn btn-info" data-toggle="tooltip" title="Read more about vaccines">Try it Now >></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xs-6">
+                     <div class="thumbnail">
+                        <div class="caption">
+                            <h4><span class="glyphicon glyphicon-ok"></span> Record Log</h4>
+                            <p>Regular recording are a key factor to improve your bowel movement, and can often explicit problems that could lead to health issues down the road.  </p>
+                            <p><a href="scan.html" class="btn btn-info" data-toggle="tooltip" title="Read more about checkups">Try it Now >></a></p>
+                    	</div>
+                    </div>
+                </div>
+                <div class="clearfix visible-md visible-xs"></div>
+                <div class="col-lg-3 col-xs-6">
+                	<div class="thumbnail">
+                        <div class="caption">
+                            <h4><span class="glyphicon glyphicon-heart"></span> Health Tips</h4>
+                            <p>Amazing part in this App! Keep recording everyday, then you can not only see your health trend, but also get advice from our Website! Follow the tips!</p>
+                            <p><a href="tips.html" class="btn btn-info" data-toggle="tooltip" title="Read more about senior pets">Try it Now >></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xs-6">
+                	<div class="thumbnail">
+                        <div class="caption">
+                    		<h4><span class="glyphicon glyphicon-cutlery"></span> Log Calendar</h4>
+                    		<p>Following our health for a week? Now, you can see your change through our App! The calendar has already been marked, choose anyone you like to see a record! </p>
+                     		<p><a href="calendar.html" class="btn btn-info" data-toggle="tooltip" title="Read more about diet plans">Try it Now >></a></p>
+                    	</div>
+                    </div>
+                 </div>
+            </div><!-- end nested row 3a -->
+        </article>
+        <aside class="col-lg-3 col-sm-4 col-lg-pull-9 col-sm-pull-8">
+        	<h3>About Our Functions</h3>
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="scan.html">Add Record</a></li>
+                <li><a href="tips.html">Health Tips</a></li>
+                <li><a href="calendar.html">Log Calendar</a></li>
+            </ul> 
+         </aside>
+    
+
+        </div><!-- end row 3 -->
+    
+    <!-- row 4 -->
+    <footer class="row">
+         <p><small>This not a real LogLog website, and is not meant to use or record.</small></p>
+    </footer>
+
+</div> <!-- end container -->
+
+<!-- javascript -->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+		$('a.btn-info').tooltip()
+	</script>
+</body>
+</html>
